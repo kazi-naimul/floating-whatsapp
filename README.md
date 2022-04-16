@@ -7,7 +7,7 @@ This is a simple Floating Whatsapp chat head made with javasctipt and jquery.
   3. Add User image
   4. Custom design supported
 
-# Integretaion 
+# Integration 
  Use following script and css in the header:
  ```sh
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
