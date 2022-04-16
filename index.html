@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating WhatsApp Button Demo</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="whatsapp-chat.js"></script>
+    <link rel="stylesheet" href="whatsapp-chat.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        * {
+      box-sizing: border-box;
+   }
+  
+    </style>
+</head>
+
+<body>
+    <p>WhatsApp Chat</p>
+    <div id="myButton"></div>
+
+</body>
+
+<script type="text/javascript">
+    whatsappchat.multipleUser(
+        {
+            selector: '#myButton',
+            users: [
+                {
+                    name:'Joey Tribbiani',
+                    phone: '8801343434343',
+                    designation: 'Customer Support',
+                    image : 'https://upload.wikimedia.org/wikipedia/en/d/da/Matt_LeBlanc_as_Joey_Tribbiani.jpg'
+                },
+                {
+                    name:'Chandler Bing',
+                    phone: '8801343434343',
+                    designation: 'Customer Support',
+                    image: 'https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png'
+                    
+                },
+                {
+                    name:'Kazi Naimul Hoque',
+                    phone: '8801343434343',
+                    active: false
+                },
+            ],
+            headerMessage: 'Feel free to ask any questions in <strong>WhatsApp</strong>',
+            chatBoxMessage: 'Team replies in a minute',
+            color: '#25D366'
+        }
+    );
+</script>
+</html>

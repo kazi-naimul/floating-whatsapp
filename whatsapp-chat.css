@@ -1,0 +1,237 @@
+
+*{
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #eee;
+}
+
+.ayoan_whatsapp_row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.ayoan_whatsapp_full:before,
+.ayoan_whatsapp_full:after,
+.ayoan_whatsapp_clearfix:before,
+.ayoan_whatsapp_clearfix:after,
+.ayoan_whatsapp_container:before,
+.ayoan_whatsapp_container:after,
+.ayoan_whatsapp_row:before,
+.ayoan_whatsapp_row:after{
+    display: table;
+    content: " ";
+}
+.ayoan_whatsapp_full:after,
+.ayoan_whatsapp_clearfix:after,
+.ayoan_whatsapp_container:after,
+.ayoan_whatsapp_row:after{
+    clear: both;
+}
+
+.ayoan_whatsapp_container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.ayoan_whatsapp_scroll1::-webkit-scrollbar {
+    width: 7px;
+}
+
+.ayoan_whatsapp_scroll1::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+.ayoan_whatsapp_scroll1::-webkit-scrollbar-thumb {
+    background: #9c9c9c;
+}
+
+.ayoan_whatsapp_full{
+    position:relative;
+    width: 100%;
+    display: block;
+}
+
+
+.ayoan_whatsapp_chatbox_container{
+    /*border: 1px solid #000;*/
+    position: fixed;
+    bottom: 0px;
+    /* height: 550px; */
+    right: 20px;
+    width: 400px;
+    font-size: 14px;
+}
+.ayoan_whatsapp_chatbox_container .ayoan_whatsapp_chatbox{
+    /*border: 1px solid #000;*/
+    position: relative;
+    top: 0;
+    /*height: 450px;*/
+}
+
+.ayoan_whatsapp_chatbox .widget-wrapper{
+    position: relative;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px rgba(0,0,0,.05);
+}
+
+.ayoan_whatsapp_chatbox .widget-header{
+    display: flex;
+    flex-direction: row;
+    background: #3cb743;
+    padding: 20px 25px;
+    /*height: 105px;*/
+    border-radius: 10px 10px 0 0;
+}
+.ayoan_whatsapp_chatbox .widget-header .col-1{
+    /*border: 1px solid;*/
+}
+.ayoan_whatsapp_chatbox .widget-header .col-1 .header-icon{
+    width: 40px;
+    opacity: .8;
+}
+.ayoan_whatsapp_chatbox .widget-header .col-2{
+    flex-grow: 1;
+    color: #fff;
+    padding-left: 18px;
+}
+.ayoan_whatsapp_chatbox .widget-header .col-2 .header-title{
+    font-size: 150%;
+    margin-bottom: 8px;
+    opacity: .8;
+}
+.ayoan_whatsapp_chatbox .widget-header .col-2 .header-content{
+    font-size: 90%;
+    font-weight: 300;
+    letter-spacing: .3px;
+    opacity: .8;
+    line-height: 1.5;
+}
+
+.ayoan_whatsapp_chatbox .widget-body{
+    /*height: 345px;*/
+    padding: 10px 10px 25px 10px;
+    border-radius: 0 0 10px 10px;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-title{
+    /*border: 1px solid #000;*/
+    padding: 7px 15px 13px 15px;
+    color: #aaa;
+    font-weight: 300;
+    font-size: 90%;
+    /*height: 40px;*/
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content{
+    /*border: 1px solid #000;*/
+    height: 302px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list{
+    /*border: 1px solid #000;*/
+    height: 100%;
+    margin: 0;
+    padding: 0 15px 0 15px;
+
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item{
+    margin-bottom: 15px;
+    background: #f1f4f7;
+    border-radius: 5px;
+    border-left: 3px solid #aaa;
+    display: flex;
+    padding: 5px 0;
+
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item:last-child{
+    margin-bottom: 0px;
+
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item.active{
+    border-left: 3px solid #3cb743;
+
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-1{
+    padding: 15px;
+    width: 80px;
+    min-width: 80px;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .user-pro-pic-wrapper{
+    border-radius: 100%;
+    overflow: hidden;
+    /* object-fit: cover; */
+    width: 50px;
+    height: 50px;
+
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .user-pro-pic-wrapper .user-pro-pic{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-2{
+    flex-grow: 1;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-word;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-2 .list-title{
+    font-size: 110%;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-2 .list-content{
+    font-size: 90%;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-2 .list-latest-text{
+    color: #e6ac0a;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-2 .list-latest-text:empty{
+    display: none;
+}
+
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-3{
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-3 .list-icon-wrapper .list-icon{
+    width: 25px;
+    height: 25px;
+    margin-top: 28px;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item .col-3 .list-icon-wrapper .list-icon path{
+    fill: #aaa;
+}
+.ayoan_whatsapp_chatbox .widget-body .body-content .user-list .item.active .col-3 .list-icon-wrapper .list-icon path{
+    fill: #3cb743;
+}
+
+.ayoan_whatsapp_chatbox_container .widget-close-btn-row{
+    /*border: 1px solid #000;*/
+    position: relative;
+    height:100px;
+    text-align: right;
+}
+.ayoan_whatsapp_chatbox_container .widget-close-btn{
+    background: #3cb743;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 20px 15px rgba(0,0,0,.1);
+    outline: none !important;
+}
+.ayoan_whatsapp_chatbox_container .widget-close-btn .icon{
+    width: 20px;
+    display: block;
+}
