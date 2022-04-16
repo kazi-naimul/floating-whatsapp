@@ -15,6 +15,8 @@ This is a simple Floating Whatsapp chat head made with javasctipt and jquery.
     <link rel="stylesheet" href="whatsapp-chat.css">
  ```
  Here is the sample integration code:
+
+
  <b>Single User:</b>
  ```sh
     <script type="text/javascript">
